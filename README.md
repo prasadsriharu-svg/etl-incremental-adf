@@ -17,4 +17,4 @@ This project demonstrates how to build an **incremental load pipeline** using **
 
 ## 📊 Example
 ```sql
-SELECT * FROM Sales WHERE LastModifiedDate > @pipeline().parameters.WatermarkValue
+SELECT * FROM <_table_name> WHERE LastModifiedDate > @pipeline().parameters.WatermarkValue
