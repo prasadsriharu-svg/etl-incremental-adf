@@ -1,0 +1,23 @@
+{
+  "name": "PL_IncrementalLoad",
+  "properties": {
+    "activities": [
+      {
+        "name": "CopyIncrementalData",
+        "type": "Copy",
+        "inputs": [{ "referenceName": "DS_SQL_Source", "type": "DatasetReference" }],
+        "outputs": [{ "referenceName": "DS_ADLS_Sink", "type": "DatasetReference" }],
+        "typeProperties": {
+          "source": {
+            "type": "SqlSource",
+            "sqlReaderQuery": "SELECT * FROM Sales WHERE LastModifiedDate > @pipeline().parameters.WatermarkValue"
+          },
+          "sink": { "type": "DelimitedTextSink" }
+        }
+      }
+    ],
+    "parameters": {
+      "WatermarkValue": { "type": "String" }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "DS_ADLS_Sink",
+  "properties": {
+    "linkedServiceName": { "referenceName": "LS_ADLS", "type": "LinkedServiceReference" },
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": { "type": "FileSystemLocation", "fileSystem": "raw", "folderPath": "incremental" },
+      "columnDelimiter": ","
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "LS_SQLServer",
+  "properties": {
+    "type": "AzureSqlDatabase",
+    "typeProperties": {
+      "connectionString": "Server=tcp:yourserver.database.windows.net,1433;Database=yourdb;User ID=youruser;Password=yourpassword;"
+    }
+  }
+}

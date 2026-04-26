@@ -1,0 +1,12 @@
+{
+  "name": "LS_ADLS",
+  "properties": {
+    "type": "AzureBlobFS",
+    "typeProperties": {
+      "url": "https://yourstorageaccount.dfs.core.windows.net/",
+      "servicePrincipalId": "xxxx-xxxx-xxxx",
+      "servicePrincipalKey": "your-key",
+      "tenant": "your-tenant-id"
+    }
+  }
+}

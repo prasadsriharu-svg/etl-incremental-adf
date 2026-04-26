@@ -1,0 +1,8 @@
+{
+  "name": "DS_SQL_Source",
+  "properties": {
+    "linkedServiceName": { "referenceName": "LS_SQLServer", "type": "LinkedServiceReference" },
+    "type": "AzureSqlTable",
+    "typeProperties": { "tableName": "Sales" }
+  }
+}
